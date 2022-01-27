@@ -1,7 +1,7 @@
 {
-  "name": "template-parcel",
+  "name": "data-algorithms",
   "version": "1.0.0",
-  "description": "Template for static HTML and Parcel",
+  "description": "Data Structures & Algorithms",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arthurvmdantas/template-parcel.git"
+    "url": "git+https://github.com/arthurvmdantas/data-algorithms.git"
   },
   "author": "Arthur V. M. Dantas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arthurvmdantas/template-parcel/issues"
+    "url": "https://github.com/arthurvmdantas/data-algorithms/issues"
   },
-  "homepage": "https://github.com/arthurvmdantas/template-parcel#readme",
+  "homepage": "https://github.com/arthurvmdantas/data-algorithms#readme",
   "devDependencies": {
     "parcel": "^2.2.1"
   }
