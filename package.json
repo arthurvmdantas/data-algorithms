@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/arthurvmdantas/data-algorithms/issues"
   },
+  "alias": {
+    "data": "./src/data"
+  },
   "homepage": "https://github.com/arthurvmdantas/data-algorithms#readme",
   "devDependencies": {
     "parcel": "^2.2.1"
