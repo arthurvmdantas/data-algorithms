@@ -42,6 +42,10 @@ export class LinkedList<T> {
     this.#size++;
   }
 
+  get size() {
+    return this.#size;
+  }
+
   *[Symbol.iterator]() {
     let currentNode = this.#head;
 
