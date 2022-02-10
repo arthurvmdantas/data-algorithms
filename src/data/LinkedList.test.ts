@@ -8,8 +8,7 @@ describe("Empty list", () => {
 
   test("Has no elements", () => {
     const list = new LinkedList();
-    const array = [];
-    for (const value of list) array.push(value);
+    const array = Array.from(list);
 
     expect(array.length).toBe(0);
   });
@@ -26,8 +25,7 @@ describe("Inserting elements", () => {
   test("Append adds an element", () => {
     const list = new LinkedList();
     list.append(1);
-    const array = [];
-    for (const value of list) array.push(value);
+    const array = Array.from(list);
 
     expect(array[0]).toBe(1);
   });
@@ -36,8 +34,7 @@ describe("Inserting elements", () => {
     const list = new LinkedList();
     list.append(1);
     list.append(2);
-    const array = [];
-    for (const value of list) array.push(value);
+    const array = Array.from(list);
 
     expect(array[1]).toBe(2);
   });
@@ -52,8 +49,7 @@ describe("Inserting elements", () => {
   test("Prepend adds an element", () => {
     const list = new LinkedList();
     list.prepend(1);
-    const array = [];
-    for (const value of list) array.push(value);
+    const array = Array.from(list);
 
     expect(array[0]).toBe(1);
   });
@@ -62,8 +58,7 @@ describe("Inserting elements", () => {
     const list = new LinkedList();
     list.prepend(1);
     list.prepend(2);
-    const array = [];
-    for (const value of list) array.push(value);
+    const array = Array.from(list);
 
     expect(array[0]).toBe(2);
   });
