@@ -4,8 +4,8 @@ type LinkedListNode<T> = {
 };
 
 export class LinkedList<T> {
-  #head: LinkedListNode<T> | null = null;
-  #size = 0;
+  private head: LinkedListNode<T> | null = null;
+  private listSize = 0;
 
   constructor() {}
 
@@ -15,17 +15,17 @@ export class LinkedList<T> {
    * @returns
    */
   append(value: T) {
-    if (!this.#head) return this.prepend(value);
+    if (!this.head) return this.prepend(value);
 
     const newNode: LinkedListNode<T> = { value, next: null };
-    let pointer = this.#head;
+    let pointer = this.head;
 
     while (pointer.next) {
       pointer = pointer.next;
     }
 
     pointer.next = newNode;
-    this.#size++;
+    this.listSize++;
   }
 
   /**
@@ -35,19 +35,19 @@ export class LinkedList<T> {
   prepend(value: T) {
     const newHead: LinkedListNode<T> = {
       value,
-      next: this.#size ? this.#head : null,
+      next: this.listSize ? this.head : null,
     };
 
-    this.#head = newHead;
-    this.#size++;
+    this.head = newHead;
+    this.listSize++;
   }
 
   get size() {
-    return this.#size;
+    return this.listSize;
   }
 
   *[Symbol.iterator]() {
-    let currentNode = this.#head;
+    let currentNode = this.head;
 
     while (currentNode) {
       yield currentNode.value;
